@@ -1,3 +1,4 @@
+# Problem question:
 # Suppose > is a dog moving in left to right direction and < is a dog moving in right to left direction. Each dog barks once meet other dogs. 
 # Write a Python code to count the number of barks for the following scenario.
 # <<->--<--<-<
