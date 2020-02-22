@@ -3,7 +3,8 @@
 # Write a Python code to count the number of barks for the following scenario.
 # <<->--<--<-<
 
-a=list("<<->--<--<-<")
+question=input("Enter Question (e.g., <<->--<--<-<):")
+a=list(question)
 count=0
 b=0
 for i in a:
