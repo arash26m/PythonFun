@@ -11,10 +11,11 @@ df.tail()
 df.D1
 #add 2 columns
 D4=df.D1+df.D2
+print(D4)
 D5=D4+df.D1
 #add new column to df
 df['D4'] = D4 
-
+df.D4
 #Delete or drop column
 df.drop(['D1','D2'], axis=1)
 df.drop(['D1','D2'], axis=1, inplace=True)
