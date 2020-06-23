@@ -22,7 +22,7 @@ df.drop(['D1','D2'], axis=1, inplace=True)
 del df['D1']
 
 #Drop or delete row by index
-df.drop([0, 1])
+df.drop([0, 1, 2])
 
 df.set_index('D3', inplace=True)
 df.drop(['b', 'a'],inplace=True)
