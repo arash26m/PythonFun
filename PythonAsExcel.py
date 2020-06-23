@@ -1,4 +1,5 @@
 #Search pandas series operations
+#https://www.youtube.com/watch?v=F6kmIpWWEdU&list=LLzEIoMmyr0gft7MAGwdX7VA&index=9&t=0s
 #https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html
 
 import pandas as pd
@@ -23,13 +24,14 @@ del df['D1']
 
 #Drop or delete row by index
 df.drop([0, 1, 2])
-
-df.set_index('D3', inplace=True)
 df.drop(['b', 'a'],inplace=True)
+
+#Make a column index for filtering based on that column variables
+df.set_index('D3', inplace=True)
 df.reset_index(inplace=True)
 
 #show specific columns
-df[['D1',D3']]
+df[['D1','D3']]
 
 #show specific rows and columns
 df.loc[2:4,['D1','D2']]
