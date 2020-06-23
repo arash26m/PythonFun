@@ -3,7 +3,7 @@
 #https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html
 
 import pandas as pd
-df=pd.read_csv("C:/Users/ataghi2/Desktop/RData.csv")
+df=pd.read_csv("C:/Users/ataghi2/Desktop/Data.csv")
 
 #number of rows and columns
 rows, columns = df.shape
@@ -46,6 +46,9 @@ df.D1.describe()
 x=df[df.D1>=20]
 x=df[df.D3 == 'b']
 x.D1.mean()
-df[df.D1]
-df.D1[df[df.D3 == 'b']]
+df[df.x]
+#show data in column D1 based on the filter on other columns
+z=df[df.D3 == 'b']
+z
+z.D1
 #if title has space instead of df.D1 use df['D1']
