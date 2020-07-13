@@ -3,6 +3,16 @@
 #https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#https://www.ritchieng.com/pandas-multi-criteria-filtering/
 #https://www.ritchieng.com/pandas-multi-criteria-filtering/
 
+#make a data frame
+import pandas as pd
+df=pd.DataFrame({'a' : [1 , 2, 3], 'b' : [4, 5, 6]})
+df.head()
+#add rows under data frame
+df2=pd.DataFrame({'a':[7, 8], 'b':[9,10]})
+df2.head()
+df=df.append(df2)
+
+#import csv data
 import pandas as pd
 df=pd.read_csv("C:/Users/ataghi2/Desktop/Data.csv")
 
