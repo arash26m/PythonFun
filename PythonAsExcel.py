@@ -11,6 +11,8 @@ df.head()
 df2=pd.DataFrame({'a':[7, 8], 'b':[9,10]})
 df2.head()
 df=df.append(df2)
+#calculate sum of column a
+df['a'].sum()
 
 #import csv data
 import pandas as pd
