@@ -24,3 +24,9 @@ import matplotlib.pyplot as plt
 plt.hist(x[:,0],ec="black",color="lightgray")
 plt.show()
 
+#-----------------------------------for loop
+x=[]
+for i in range (5):
+    x.append(i**2)
+    
+print(x)    
