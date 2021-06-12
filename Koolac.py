@@ -15,3 +15,13 @@ f()
 end=time()
 
 print("duration: ",start-end)
+
+
+#Bar Plot
+from sklearn.datasets import load_iris
+x,y=load_iris(return_X_y=True)
+
+import matplotlib.pyplot as plt
+plt.hist(x[:,0],ec="black",color="lightgray")
+plt.show()
+
