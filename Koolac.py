@@ -30,3 +30,10 @@ for i in range (5):
     x.append(i**2)
     
 print(x)    
+
+#-----------------------------------install package
+#in windows search type cmd or press window+R cmd
+#type: pip install numpy
+#pip uninstall numpy
+#pip show numpy
+#pip --version
