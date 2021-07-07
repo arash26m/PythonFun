@@ -37,3 +37,18 @@ print(x)
 #pip uninstall numpy
 #pip show numpy
 #pip --version
+
+#-----------------------------------k-means
+#import iris data
+from sklearn.datasets import load_iris
+x,y=load_iris(return_X_y=True)
+#import k-means from sklearn
+from sklearn.cluster import KMeans
+#define the model
+model=KMeans(n_clusters=3,init="k-means++")
+#fit the model
+model.fit(x,y)
+#print results
+print(model.labels_)
+
+#-----------------------------------
