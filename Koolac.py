@@ -46,6 +46,15 @@ print(x)
 #import natsort
 #or in anaconda console type
 #ln[]: !conda install -c conda-forge unicodedata2 --y
+#--To show list of packages
+!conda list
+!conda env list
+!conda update conda
+!activate py35
+!conda update PACKAGENAME
+!conda creat --name ai37 python=3.7
+!conda env list
+!source activate ai37
 
 #-----------------------------------k-means
 #import iris data
