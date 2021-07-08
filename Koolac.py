@@ -31,12 +31,21 @@ for i in range (5):
     
 print(x)    
 
-#-----------------------------------install package
+#-----------------------------------install package in Python
 #in windows search type cmd or press window+R cmd
 #type: pip install numpy
 #pip uninstall numpy
 #pip show numpy
 #pip --version
+
+#-----------------------------------install package in Anaconda
+#search cmd select Anaconda Prompt
+#search package name on internet and copy link into the prompt "conda open cv"
+#conda install -c conda-forge opencv
+#conda install -c anaconda natsort
+#import natsort
+#or in anaconda console type
+#ln[]: !conda install -c conda-forge unicodedata2 --y
 
 #-----------------------------------k-means
 #import iris data
