@@ -51,4 +51,14 @@ model.fit(x,y)
 #print results
 print(model.labels_)
 
+#-----------------------------------put two pictures on eachother
+import cv2
+im1=cv2.imread(r"C:\Users\ataghi2\Desktop\R\Python\1.png")
+im2=cv2.imread(r"C:\Users\ataghi2\Desktop\R\Python\2.png")
+final_image=cv2.addWeighted(img1,0.8,img2,0.2,0)
+cv2.imshow("Window",final_image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
 #-----------------------------------
+
