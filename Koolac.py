@@ -29,8 +29,15 @@ x=[]
 for i in range (5):
     x.append(i**2)
     
-print(x)    
-
+print(x)   
+#-----------------------------------break
+x=[]
+for i in range (1,11):
+    if i>4:
+        break
+    x.append(i)
+    
+print(x)
 #-----------------------------------install package in Python
 #in windows search type cmd or press window+R cmd
 #type: pip install numpy
