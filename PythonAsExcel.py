@@ -117,5 +117,14 @@ print(df3)
 #write in excel
 df3.to_excel('C:/Users/ataghi2/Desktop/R/Python/3.xlsx', index=False)
 
+#-------------------------------Add a number to all cells in a column
+A = 10
+
+C = [1 , 2, 3, 4, 5]
+
+D = []
+for i in range(len(C)):
+    D.append(C[i]+A)
+print("D = ", D) 
 #-------------------------------
 
