@@ -126,5 +126,13 @@ D = []
 for i in range(len(C)):
     D.append(C[i]+A)
 print("D = ", D) 
-#-------------------------------
+#-------------------------------Add two columns
+D=[1, 2, 3, 4]
+C=[5, 6, 7, 8]
 
+E=[]
+for i in range(len(D)):
+    E.append(D[i]+C[i])
+    
+print('E= ', E)
+    
