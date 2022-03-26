@@ -126,6 +126,11 @@ D = []
 for i in range(len(C)):
     D.append(C[i]+A)
 print("D = ", D) 
+#-------------------------------Another way
+a=10
+c=list(range(1,6))
+d=[ithem+a for ithem in c]
+print(f"D = {d}")
 #-------------------------------Add two columns
 D=[1, 2, 3, 4]
 C=[5, 6, 7, 8]
