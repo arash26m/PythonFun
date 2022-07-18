@@ -1,0 +1,5 @@
+#------------------How to install pakages in Anaconda
+Search on internet: Anaconda package name --> Copy package name
+In Anaconda propmt paste package name
+or
+In Spider console: !paste package name 
