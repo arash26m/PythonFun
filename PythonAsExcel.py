@@ -139,7 +139,7 @@ print('E= ', E)
 #-------------------------------Make data categorical
 df = pd.DataFrame({"A": ["a", "b", "c", "a"]})
 df["B"] = df["A"].astype("category")
-
+#There is a good example in W3School>Python>Machine Learning>Decision Tree
 #-------------------------------
 
 
