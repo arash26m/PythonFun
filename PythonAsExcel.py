@@ -137,8 +137,10 @@ for i in range(len(D)):
     
 print('E= ', E)
 #-------------------------------Make data categorical
+df = pd.DataFrame({"A": ["a", "b", "c", "a"]})
+df["B"] = df["A"].astype("category")
 
-
+#-------------------------------
 
 
 
