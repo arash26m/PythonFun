@@ -1,6 +1,4 @@
-## BORROWED VERY HEAVILY FROM AND CREDIT TO:
-## https://towardsdatascience.com/how-to-build-your-own-dataset-of-youtube-comments-39a1e57aade
-## Ken Jee
+#YouTube API
 
 import json
 from csv import writer
