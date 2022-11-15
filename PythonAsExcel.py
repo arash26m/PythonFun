@@ -152,6 +152,10 @@ for i in range (10):
     i = np.random.uniform (low = 0, high = 1)
     random.append(i)
 print (random)
+#-------------------------------Calculate Ln, average
+print (np.log(10))
+J = [1, 4, 8]
+print (mean (J))
 #-------------------------------
 
 
