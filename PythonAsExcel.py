@@ -145,8 +145,14 @@ import numpy
 X = numpy.array([3.78, 2.44, 2.09, 0.14, 1.72, 1.65, 4.92, 4.37, 4.96, 4.52, 3.69, 5.88])
 X = numpy.array([3.78, 2.44, 2.09, 0.14, 1.72, 1.65, 4.92, 4.37, 4.96, 4.52, 3.69, 5.88]).reshape(-1,1)
 
+#-------------------------------Generate 10 random number
+random= []
 
-
+for i in range (10):
+    i = np.random.uniform (low = 0, high = 1)
+    random.append(i)
+print (random)
+#-------------------------------
 
 
 
