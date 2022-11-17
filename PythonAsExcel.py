@@ -156,8 +156,12 @@ print (random)
 print (np.log(10))
 J = [1, 4, 8]
 print (mean (J))
+#-------------------------------Find y based on x values
+import numpy as np
+x = [0.01474926, 0.96923077, 1]
+y = [1, 0.7875, 0]
+np.interp(0.75, x,y)
 #-------------------------------
-
 
 
 
