@@ -162,6 +162,98 @@ x = [0.01474926, 0.96923077, 1]
 y = [1, 0.7875, 0]
 np.interp(0.75, x,y)
 #-------------------------------
+In [2]: df
+Out[2]:
+    A  B
+0  p1  1
+1  p1  2
+2  p3  3
+3  p2  4
+
+In [3]: df.loc[df['B'] == 3, 'A']
+Out[3]:
+2    p3
+Name: A, dtype: object
+
+In [4]: df.loc[df['B'] == 3, 'A'].iloc[0]
+Out[4]: 'p3'
+---------------------------------
+df.query('B==3')['A']
+------------------------------
+df[df['B']==3]['A'].values[0] if you just want item itself without the brackets
+-----------------------------
+# Choose entries with id p01
+df_new = df[df['Pid'] == 'p01']
+ 
+print(df_new)
+
+-----------------------------
+# condition mask
+mask = df['Pid'] == 'p01'
+ 
+# new dataframe with selected rows
+df_new = pd.DataFrame(df[mask])
+ 
+print(df_new)
+-----------------------------
+# condition with df.values property
+mask = df['game_id'].values == 'g21'
+ 
+# new dataframe
+df_new = df[mask]
+ 
+print(df_new)
+-----------------------------
+# for boolean indexing
+mask = df['game_id'].values == 'g21'
+ 
+# using loc() method
+df_new = df.loc[mask]
+ 
+print(df_new)
+-----------------------------
+# condition mask
+mask = df['game_id'].values == 'g21'
+print("Mask array :", mask)
+ 
+# getting non zero indices
+pos = np.flatnonzero(mask)
+print("\nRows selected :", pos)
+ 
+# selecting rows
+df.iloc[pos]
+-----------------------------
+
+df.query('points>50 & name!="Albert"')
+-----------------------------
+df.query("A == 3")["B"]
+-----------------------------
+df.query("A == 3")   # returns a DataFrame
+-----------------------------
+# Extract column values by using DataFrame.loc[] property.
+df2=df.loc[df['Fee'] == 30000, 'Courses']
+
+# To get First Element by using .iloc[] method.
+df2=df.loc[df['Fee'] == 30000, 'Courses'].iloc[0]
+
+# Extract column values by DataFrame.item() method
+df2=df.loc[df['Fee'] == 30000, 'Courses'].item()
+
+# Using DataFrame.query() method extract column values.
+df2=df.query('Fee==25000')['Courses']
+
+# Using DataFrame.values() property.
+df2=df[df['Fee']==22000]['Courses'].values[0]
+
+# Other example.
+df2=df[df['Fee']==22000]['Courses']
+-----------------------------
+
+
+
+
+
+
 
 
 
