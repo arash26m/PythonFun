@@ -155,7 +155,7 @@ print (random)
 #-------------------------------Calculate Ln, average
 print (np.log(10))
 J = [1, 4, 8]
-print (mean (J))
+print (np.mean (J))
 #-------------------------------Find y based on x values
 #1 interpolation
 import numpy as np
