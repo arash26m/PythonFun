@@ -157,99 +157,26 @@ print (np.log(10))
 J = [1, 4, 8]
 print (mean (J))
 #-------------------------------Find y based on x values
+#1 interpolation
 import numpy as np
-x = [0.01474926, 0.96923077, 1]
-y = [1, 0.7875, 0]
-np.interp(0.75, x,y)
+d = [-2,-1.5,-1,-0.5,0,0.5,1,1.5,2,2.5,3,3.5,4,4.5,5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,13.5,14,14.5,15, 15.5, 16]
+sl = [0,1.25,2.5,7.95,13.4,18.35,23.3,27.7,32.1,36.1,40.1,43.6,47.1,50.15,53.2,55.9,58.6,60.9,63.2,65.2,67.2,68.85,70.5,71.85,73.2,74.3,75.4,76.3,77.2,77.85,78.5,79,79.5,79.85,80.2,80.45,80.7]
+cl = [0,1.2,2.4,5.25,8.1,10.7,13.3,15.6,17.9,19.95,22,23.85,25.7,27.25,28.8,30.15,31.5,32.65,33.8,34.75,35.7,36.45,37.2,37.8,38.4,38.8,39.2,39.45,39.7,39.85,40,40,40,40,40,40,40]
+np.interp(12, d, sl)
+#2 
+import pandas as pd
+data = {'depth' : [-2,-1.5,-1,-0.5,0,0.5,1,1.5,2,2.5,3,3.5,4,4.5,5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,13.5,14,14.5,15, 15.5, 16],
+'structure_loss' : [0,1.25,2.5,7.95,13.4,18.35,23.3,27.7,32.1,36.1,40.1,43.6,47.1,50.15,53.2,55.9,58.6,60.9,63.2,65.2,67.2,68.85,70.5,71.85,73.2,74.3,75.4,76.3,77.2,77.85,78.5,79,79.5,79.85,80.2,80.45,80.7],
+'contents_loss' : [0,1.2,2.4,5.25,8.1,10.7,13.3,15.6,17.9,19.95,22,23.85,25.7,27.25,28.8,30.15,31.5,32.65,33.8,34.75,35.7,36.45,37.2,37.8,38.4,38.8,39.2,39.45,39.7,39.85,40,40,40,40,40,40,40]
+        }
+df = pd.DataFrame(data)
+print(df.loc[df['depth'] == 5, 'structure_loss'])
+#3
+df.loc[df['depth'] == 16, 'contents_loss'].iloc[0]
+df.loc[df['depth'] == 16, 'contents_loss'].values[0]
+#4 query is like SQL
+df.query('depth == 10')['contents_loss']
 #-------------------------------
-In [2]: df
-Out[2]:
-    A  B
-0  p1  1
-1  p1  2
-2  p3  3
-3  p2  4
-
-In [3]: df.loc[df['B'] == 3, 'A']
-Out[3]:
-2    p3
-Name: A, dtype: object
-
-In [4]: df.loc[df['B'] == 3, 'A'].iloc[0]
-Out[4]: 'p3'
----------------------------------
-df.query('B==3')['A']
-------------------------------
-df[df['B']==3]['A'].values[0] if you just want item itself without the brackets
------------------------------
-# Choose entries with id p01
-df_new = df[df['Pid'] == 'p01']
- 
-print(df_new)
-
------------------------------
-# condition mask
-mask = df['Pid'] == 'p01'
- 
-# new dataframe with selected rows
-df_new = pd.DataFrame(df[mask])
- 
-print(df_new)
------------------------------
-# condition with df.values property
-mask = df['game_id'].values == 'g21'
- 
-# new dataframe
-df_new = df[mask]
- 
-print(df_new)
------------------------------
-# for boolean indexing
-mask = df['game_id'].values == 'g21'
- 
-# using loc() method
-df_new = df.loc[mask]
- 
-print(df_new)
------------------------------
-# condition mask
-mask = df['game_id'].values == 'g21'
-print("Mask array :", mask)
- 
-# getting non zero indices
-pos = np.flatnonzero(mask)
-print("\nRows selected :", pos)
- 
-# selecting rows
-df.iloc[pos]
------------------------------
-
-df.query('points>50 & name!="Albert"')
------------------------------
-df.query("A == 3")["B"]
------------------------------
-df.query("A == 3")   # returns a DataFrame
------------------------------
-# Extract column values by using DataFrame.loc[] property.
-df2=df.loc[df['Fee'] == 30000, 'Courses']
-
-# To get First Element by using .iloc[] method.
-df2=df.loc[df['Fee'] == 30000, 'Courses'].iloc[0]
-
-# Extract column values by DataFrame.item() method
-df2=df.loc[df['Fee'] == 30000, 'Courses'].item()
-
-# Using DataFrame.query() method extract column values.
-df2=df.query('Fee==25000')['Courses']
-
-# Using DataFrame.values() property.
-df2=df[df['Fee']==22000]['Courses'].values[0]
-
-# Other example.
-df2=df[df['Fee']==22000]['Courses']
------------------------------
-
-
 
 
 
