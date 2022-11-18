@@ -176,8 +176,17 @@ df.loc[df['depth'] == 16, 'contents_loss'].iloc[0]
 df.loc[df['depth'] == 16, 'contents_loss'].values[0]
 #4 query is like SQL
 df.query('depth == 10')['contents_loss']
+#-------------------------------use if inside for loop
+FD = [-4, 1, 0, 5, 16, 18, 100]
+FD2 = []
+for i in range (len(FD)):
+    if FD[i]<-2:
+        FD[i]=-2
+    elif FD[i]>16:
+        FD[i]=16
+    FD2.append (FD[i])
+print("FD2 = ", FD2)
 #-------------------------------
-
 
 
 
