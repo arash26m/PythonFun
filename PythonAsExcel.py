@@ -186,8 +186,9 @@ for i in range (len(FD)):
         FD[i]=16
     FD2.append (FD[i])
 print("FD2 = ", FD2)
+#-------------------------------Convert data frame to list
+a = df['header'].values.tolist()
 #-------------------------------
-
 
 
 
