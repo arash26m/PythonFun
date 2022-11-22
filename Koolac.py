@@ -14,7 +14,7 @@ start=time()
 f()
 end=time()
 
-print("duration: ",start-end)
+print("duration: ",end-start)
 
 #-----------------------------------Bar Plot
 from sklearn.datasets import load_iris
