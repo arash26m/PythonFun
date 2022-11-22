@@ -188,6 +188,15 @@ for i in range (len(FD)):
 print("FD2 = ", FD2)
 #-------------------------------Convert data frame to list
 a = df['header'].values.tolist()
+#-------------------------------Logarithmic regression
+R_minus_one = [10-1, 50-1, 100-1, 500-1]
+flood_height = [2.3, 2.8, 3.1, 3.6]
+
+plt.scatter(R_minus_one, flood_height)
+plt.show()
+
+fit = np.polyfit(np.log(R_minus_one), flood_height, 1)
+print (fit)
 #-------------------------------
 
 
