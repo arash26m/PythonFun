@@ -197,6 +197,9 @@ plt.show()
 
 fit = np.polyfit(np.log(R_minus_one), flood_height, 1)
 print (fit)
+#-------------------------------print coefficents separatly
+print (fit[0])
+print (fit[1])
 #-------------------------------
 
 
