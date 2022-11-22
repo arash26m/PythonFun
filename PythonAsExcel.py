@@ -145,13 +145,18 @@ import numpy
 X = numpy.array([3.78, 2.44, 2.09, 0.14, 1.72, 1.65, 4.92, 4.37, 4.96, 4.52, 3.69, 5.88])
 X = numpy.array([3.78, 2.44, 2.09, 0.14, 1.72, 1.65, 4.92, 4.37, 4.96, 4.52, 3.69, 5.88]).reshape(-1,1)
 
-#-------------------------------Generate 10 random number
-random= []
+#-------------------------------Generate 5000 random number
+Ran= []
 
-for i in range (10):
+for i in range (5000):
     i = np.random.uniform (low = 0, high = 1)
-    random.append(i)
-print (random)
+    Ran.append (i)
+print ("Ran = ", Ran)  
+--------#or
+Ran=pd.read_csv("C:/Users/ataghi2/OneDrive/0-TAMU/SHMP/Flood AAL Methodology/RandomNumbers.csv")
+#convert data frame to list
+Ran = Ran['invr'].values.tolist()
+print(Ran[:10])
 #-------------------------------Calculate Ln, average
 print (np.log(10))
 J = [1, 4, 8]
