@@ -14,12 +14,15 @@ df2.head()
 df=df.append(df2)
 #-------------------------------calculate sum of column a
 df['a'].sum()
-
-#import csv data
+#-------------------------------import csv data
 import pandas as pd
 df=pd.read_csv("C:/Users/ataghi2/Desktop/Data.csv")
 #or
 df=pd.read_csv(r"C:\Users\ataghi2\Desktop\Data.csv")
+#-------------------------------write on a csv file
+import pandas as pd
+cities = pd.DataFrame([['Sacramento', 'California'], ['Miami', 'Florida']], columns=['City', 'State'])
+cities.to_csv('cities.csv')
 #-------------------------------number of rows and columns
 rows, columns = df.shape
 df.head(2)
