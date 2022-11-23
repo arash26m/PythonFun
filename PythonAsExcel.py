@@ -18,13 +18,13 @@ df['a'].sum()
 #import csv data
 import pandas as pd
 df=pd.read_csv("C:/Users/ataghi2/Desktop/Data.csv")
-
+#or
+df=pd.read_csv(r"C:\Users\ataghi2\Desktop\Data.csv")
 #-------------------------------number of rows and columns
 rows, columns = df.shape
 df.head(2)
 df.tail()
 df.D1
-
 #-------------------------------add 2 columns
 D3=df.D1+df.D2
 print(D3)
