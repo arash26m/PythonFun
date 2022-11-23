@@ -23,6 +23,12 @@ df=pd.read_csv(r"C:\Users\ataghi2\Desktop\Data.csv")
 import pandas as pd
 cities = pd.DataFrame([['Sacramento', 'California'], ['Miami', 'Florida']], columns=['City', 'State'])
 cities.to_csv('cities.csv')
+#-------------------------------put list data to csv file
+import pandas as pd
+list_name = ['item_1', 'item_2', 'item_3']
+df = pd.DataFrame (list_name, columns = ['column_name'])
+print(df)
+df.to_csv('csv name.csv')
 #-------------------------------number of rows and columns
 rows, columns = df.shape
 df.head(2)
@@ -208,8 +214,13 @@ print (fit)
 #-------------------------------print coefficents separatly
 print (fit[0])
 print (fit[1])
+#-------------------------------put list data to csv file
+import pandas as pd
+list_name = ['item_1', 'item_2', 'item_3']
+df = pd.DataFrame (list_name, columns = ['column_name'])
+print(df)
+df.to_csv('csv name.csv')
 #-------------------------------
-
 
 
 
