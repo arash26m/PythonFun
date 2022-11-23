@@ -29,6 +29,18 @@ list_name = ['item_1', 'item_2', 'item_3']
 df = pd.DataFrame (list_name, columns = ['column_name'])
 print(df)
 df.to_csv('csv name.csv')
+#-------------------------------put multiple lists to csv file
+import pandas as pd
+al=[]
+for i in range (10):
+    al.append(i)
+print(al)
+bl=[]
+for i in range (len(al)):
+    bl.append(al[i]*3)
+print(bl)
+df = pd.DataFrame({'AALb':al, 'AALc':bl})
+df.to_csv('AAL Results.csv')
 #-------------------------------number of rows and columns
 rows, columns = df.shape
 df.head(2)
