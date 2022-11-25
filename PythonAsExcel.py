@@ -232,8 +232,27 @@ list_name = ['item_1', 'item_2', 'item_3']
 df = pd.DataFrame (list_name, columns = ['column_name'])
 print(df)
 df.to_csv('csv name.csv')
-#-------------------------------
+#-------------------------------dataframe row append per loop
+import pandas as pd
 
+input = pd.read_csv(r"C:\Users\ataghi2\OneDrive\0-TAMU\SHMP\Flood AAL Methodology\input.csv")
+
+df = pd.DataFrame([])
+
+for a in range (len(input['no'])):
+    ...
+    print('per AALb = ', pAALb)
+    print('per AALc = ', pAALc)
+    print('dol AALb = ', dAALb)
+    print('dol AALc = ', dAALc)
+    print('dol AALt = ', dAALt)
+    dataf = pd.DataFrame({'ppAALb':[pAALb], 'ppAALc':[pAALc], 'ddAALb':[dAALb], 'ddAALc':[dAALc], 'ddAALt':[dAALt]})
+    df = df.append(dataf)
+    
+print('Time = ', end-start)
+print(df[:10])
+df.to_csv('ResultsOfAAL.csv')
+#-------------------------------
 
 
 
