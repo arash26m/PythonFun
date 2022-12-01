@@ -2,7 +2,10 @@
 #https://www.youtube.com/watch?v=F6kmIpWWEdU&list=LLzEIoMmyr0gft7MAGwdX7VA&index=9&t=0s
 #https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#https://www.ritchieng.com/pandas-multi-criteria-filtering/
 #https://www.ritchieng.com/pandas-multi-criteria-filtering/
-
+#-------------------------------comment a block
+"""
+block
+"""
 #-------------------------------make a data frame
 import pandas as pd
 df=pd.DataFrame({'a' : [1 , 2, 3], 'b' : [4, 5, 6]})
