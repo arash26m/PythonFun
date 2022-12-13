@@ -252,7 +252,6 @@ for a in range (len(input['no'])):
     dataf = pd.DataFrame({'ppAALb':[pAALb], 'ppAALc':[pAALc], 'ddAALb':[dAALb], 'ddAALc':[dAALc], 'ddAALt':[dAALt]})
     df = df.append(dataf)
     
-print('Time = ', end-start)
 print(df[:10])
 df.to_csv('ResultsOfAAL.csv')
 #-------------------------------
