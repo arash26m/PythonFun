@@ -254,6 +254,16 @@ for a in range (len(input['no'])):
     
 print(df[:10])
 df.to_csv('ResultsOfAAL.csv')
+#-------------------------------if in for loop
+print ("\nlimit flood depth data in their range from -2 to 16\n")
+FD2 = [-8, -2, 0, 16, 30]
+for i in range (len(FD)):
+    if FD[i]<-2:
+        FD[i]=-2
+    elif FD[i]>16:
+        FD[i]=16
+    FD2.append (FD[i])
+print("FD2 = ", FD2[:10])
 #-------------------------------
 
 
