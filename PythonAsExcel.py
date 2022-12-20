@@ -264,8 +264,10 @@ for i in range (len(FD)):
         FD[i]=16
     FD2.append (FD[i])
 print("FD2 = ", FD2[:10])
+#-------------------------------multiply a number to list
+a = [1, 2, 5]
+b = [i*0.5 for i in a]
 #-------------------------------
-
 
 
 
