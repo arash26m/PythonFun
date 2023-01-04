@@ -22,6 +22,10 @@ import pandas as pd
 df=pd.read_csv("C:/Users/ataghi2/Desktop/Data.csv")
 #or
 df=pd.read_csv(r"C:\Users\ataghi2\Desktop\Data.csv")
+#-------------------------------import excel data
+import pandas as pd
+df = pd.read_excel(r'C:\Users\arasht\OneDrive\0-TAMU\AAL Flood\original-input_ex.xlsx', sheet_name='original-input')
+print(df)
 #-------------------------------write on a csv file
 import pandas as pd
 cities = pd.DataFrame([['Sacramento', 'California'], ['Miami', 'Florida']], columns=['City', 'State'])
