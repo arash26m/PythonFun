@@ -277,6 +277,22 @@ df = pd.DataFrame({'A': [0, "nan", 3, 0, 4], 'B': [5, 6, 7, 8, 9], 'C': ['a', 'b
 df
 df["A"].replace([0, 4], 5, inplace=True)
 df
+#-------------------------------if and or
+n_o_s = df["n_o_s"].values.tolist()
+number_of_story = []
+for i in range (len(n_o_s)):
+    if n_o_s[i]==1:
+        n_o_s[i]=1
+    elif n_o_s[i]==2:
+        n_o_s[i]=2
+    elif n_o_s[i]==1.5:
+        n_o_s[i]=1.5
+    elif n_o_s[i]=="split_level" or n_o_s[i]=="split level":
+        n_o_s[i]=1.5
+    else: 
+        n_o_s[i]=2
+    number_of_story.append (n_o_s[i])
+print("number_of_story = ", number_of_story)
 #-------------------------------
 
 
