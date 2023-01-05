@@ -273,7 +273,8 @@ a = [1, 2, 5]
 b = [i*0.5 for i in a]
 #-------------------------------replace values in a column
 import pandas as pd
-df = pd.DataFrame({'A': [0, 0, 0, 0, 4], 'B': [5, 6, 7, 8, 9], 'C': ['a', 'b', 'c', 'd', 'e']})
+df = pd.DataFrame({'A': [0, "nan", 3, 0, 4], 'B': [5, 6, 7, 8, 9], 'C': ['a', 'b', 'c', 'd', 'e']})
+df
 df["A"].replace([0, 4], 5, inplace=True)
 df
 #-------------------------------
