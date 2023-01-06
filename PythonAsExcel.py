@@ -293,9 +293,12 @@ for i in range (len(n_o_s)):
         n_o_s[i]=2
     number_of_story.append (n_o_s[i])
 print("number_of_story = ", number_of_story)
+#-------------------------------remove missing values
+df.dropna()
+#-------------------------------replace missing values
+values = {"Column A": 99999, "Column B": 888888, "Column C": 77777, "Column D": 66666}
+df.fillna(value=values)
 #-------------------------------
-
-
 
 
 
