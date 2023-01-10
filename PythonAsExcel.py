@@ -298,8 +298,12 @@ df.dropna()
 #-------------------------------replace missing values
 values = {"Column A": 99999, "Column B": 888888, "Column C": 77777, "Column D": 66666}
 df.fillna(value=values)
+#-------------------------------add empty column
+df.insert(10,"foundation", "no_basement")
+df["Blank_Column"] = " "
+df["NaN_Column"] = np.nan
+df["None_Column"] = None
 #-------------------------------
-
 
 
 
