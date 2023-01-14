@@ -303,9 +303,28 @@ df.insert(10,"foundation", "no_basement")
 df["Blank_Column"] = " "
 df["NaN_Column"] = np.nan
 df["None_Column"] = None
+#-------------------------------convert dataframe to dictionary
+import pandas as pd
+df = pd.read_excel(r'C:\Users\arasht\OneDrive\0-TAMU\AAL Flood\test.xlsx', sheet_name='Sheet1')
+df.to_dict()
+df1 = pd.DataFrame({'A': {0: 1, 1: 4, 2: 1, 3: 4, 4: 7, 5: 10, 6: 10, 7: 11},
+   'B': {0: 5, 1: 3, 2: 2, 3: 5, 4: 8, 5: 11, 6: 10, 7: 11},
+   'C': {0: 3, 1: 1, 2: 3, 3: 6, 4: 9, 5: 12, 6: 11, 7: 11}})
+#-------------------------------compare values in datafarme rows
+df1 = pd.DataFrame({'A': {0: 1, 1: 4, 2: 1, 3: 4, 4: 7, 5: 10, 6: 10, 7: 11},
+   'B': {0: 5, 1: 3, 2: 2, 3: 5, 4: 8, 5: 11, 6: 10, 7: 11},
+   'C': {0: 3, 1: 1, 2: 3, 3: 6, 4: 9, 5: 12, 6: 11, 7: 11}})
+
+for i in range (len(df["A"])):
+    if df["A"].loc[df.index[i]]<df["B"].loc[df.index[i]]<df["C"].loc[df.index[i]]:
+        pass
+    else:
+        df.at[i, "A"]=""
+        df.at[i, "B"]=""
+        df.at[i, "C"]=""
+    
+print(df)
 #-------------------------------
-
-
 
 
 
