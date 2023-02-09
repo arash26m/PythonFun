@@ -110,6 +110,14 @@ df
 x=df[(df.D=='yes')&(df.D0=='a')&(df.D1>10)]
 x
 x.D2.sum()
+#-------------------------------filter rows like excel
+building_type = ["RES1-1SNB", "RES1-2SNB", "RES1-2SNB", "RES1-1SWB", 
+                            "RES1-2SNB", "RES1-2SWB", "RES1-3SNB", 
+                            "RES1-3SWB", "RES1-SLNB", "RES1-SLWB"] 
+    
+df = df[df['occtype'].isin(building_type)] 
+df.fd_id.count()
+print(df["occtype"].unique())
 #-------------------------------Excel V-LookUp
 import pandas as pd
 import numpy as np
