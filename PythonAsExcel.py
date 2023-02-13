@@ -6,12 +6,12 @@
 """
 block
 """
-#-------------------------------make a data frame
+#-------------------------------make a data frame 
 import pandas as pd
 df=pd.DataFrame({'a' : [1 , 2, 3], 'b' : [4, 5, 6]})
 df.head()
 
-#add rows under data frame
+#add rows under data frame or combine two dataframe
 df2=pd.DataFrame({'a':[7, 8], 'b':[9,10]})
 df2.head()
 df=df.append(df2)
@@ -36,7 +36,7 @@ list_name = ['item_1', 'item_2', 'item_3']
 df = pd.DataFrame (list_name, columns = ['column_name'])
 print(df)
 df.to_csv('csv name.csv')
-#-------------------------------put multiple lists to csv file
+#-------------------------------put multiple lists to csv file or convert list to dataframe
 import pandas as pd
 al=[]
 for i in range (10):
@@ -48,6 +48,15 @@ for i in range (len(al)):
 print(bl)
 df = pd.DataFrame({'AALb':al, 'AALc':bl})
 df.to_csv('AAL Results.csv')
+#-------------------------------convert a dataframe column to a list 
+import pandas as pd
+# Create a sample DataFrame
+df = pd.DataFrame({'col1': [1, 2, 3, 4],
+                   'col2': ['A', 'B', 'C', 'D']})
+
+# Convert column 'col1' to a list
+col1_list = df['col1'].tolist()
+print(col1_list)
 #-------------------------------number of rows and columns
 rows, columns = df.shape
 df.head(2)
