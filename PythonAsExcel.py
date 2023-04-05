@@ -341,7 +341,16 @@ for i in range (len(df["A"])):
         df.at[i, "C"]=""
     
 print(df)
-#-------------------------------
+#-------------------------------Write inside specefic column and rows
+df.loc[1:5,"found_type"]="P"
+df.loc[6:14,"found_type"]="I"
+
+
+
+
+
+
+
 
 
 
