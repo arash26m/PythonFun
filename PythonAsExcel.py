@@ -30,6 +30,9 @@ print(df)
 import pandas as pd
 cities = pd.DataFrame([['Sacramento', 'California'], ['Miami', 'Florida']], columns=['City', 'State'])
 cities.to_csv('cities.csv')
+#-------------------------------write on an Excel file
+filename = "output.xlsx"
+df.to_excel(filename, index=False)
 #-------------------------------put list data to csv file
 import pandas as pd
 list_name = ['item_1', 'item_2', 'item_3']
