@@ -314,6 +314,7 @@ for i in range (len(n_o_s)):
     number_of_story.append (n_o_s[i])
 print("number_of_story = ", number_of_story)
 #-------------------------------remove missing values
+df = df.dropna(subset=['Age', 'Salary'])
 df.dropna()
 #-------------------------------replace missing values
 values = {"Column A": 99999, "Column B": 888888, "Column C": 77777, "Column D": 66666}
