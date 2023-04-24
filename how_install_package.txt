@@ -4,6 +4,14 @@ In Anaconda prompt paste package name
 or
 In Spider console: !paste package name 
 
+#list of current packages
+conda list
+
+#remove a package
+conda remove scipy
+
 #------------------How to install packages in Colab
 !pip install PackageName
+
+
 
