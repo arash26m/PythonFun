@@ -3,3 +3,7 @@ Search on internet: Anaconda package name --> Copy package name
 In Anaconda prompt paste package name
 or
 In Spider console: !paste package name 
+
+#------------------How to install packages in Colab
+!pip install PackageName
+
