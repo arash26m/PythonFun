@@ -349,9 +349,13 @@ print(df)
 df.loc[1:5,"found_type"]="P"
 df.loc[6:14,"found_type"]="I"
 
+#-------------------------------decimat format
+# %d means print without decimal  
+print("%d" % 5.6434343434343)
+# "%.2f" % a --> show a with 2 decimals
+print("%.2f" % 5.3434343434343)
 
-
-
+#-------------------------------
 
 
 
