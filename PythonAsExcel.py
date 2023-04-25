@@ -128,6 +128,15 @@ df_pd[(df_pd["cost"] > 750) & (df_pd["store"] == "Violet")]
 # polars
 df_pl.filter((pl.col("cost") > 750) & (pl.col("store") == "Violet"))
 #-------------------------------filter rows like excel
+#We can select the rows for product groups PG1, PG2, and PG3 as follows
+# pandas
+df_pd[df_pd["product_group"].isin(["PG1", "PG2", "PG5"])]
+
+# polars
+import polars as pl
+df_pl.filter(pl.col("product_group").is_in(["PG1", "PG2", "PG5"]))
+
+#These building types be in occutype column
 building_type = ["RES1-1SNB", "RES1-2SNB", "RES1-2SNB", "RES1-1SWB", 
                             "RES1-2SNB", "RES1-2SWB", "RES1-3SNB", 
                             "RES1-3SWB", "RES1-SLNB", "RES1-SLWB"] 
