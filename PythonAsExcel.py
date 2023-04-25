@@ -122,6 +122,11 @@ df
 x=df[(df.D=='yes')&(df.D0=='a')&(df.D1>10)]
 x
 x.D2.sum()
+
+# pandas
+df_pd[(df_pd["cost"] > 750) & (df_pd["store"] == "Violet")]
+# polars
+df_pl.filter((pl.col("cost") > 750) & (pl.col("store") == "Violet"))
 #-------------------------------filter rows like excel
 building_type = ["RES1-1SNB", "RES1-2SNB", "RES1-2SNB", "RES1-1SWB", 
                             "RES1-2SNB", "RES1-2SWB", "RES1-3SNB", 
