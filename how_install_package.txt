@@ -13,5 +13,8 @@ conda remove scipy
 #------------------How to install packages in Colab
 !pip install PackageName
 
+!pip install geopandas
+
+
 
 
