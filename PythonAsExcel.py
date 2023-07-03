@@ -369,8 +369,25 @@ print("%d" % 5.6434343434343)
 # "%.2f" % a --> show a with 2 decimals
 print("%.2f" % 5.3434343434343)
 
-#-------------------------------
+#-------------------------------chunk a large csv file to smaller csv files
+import pandas as pd
 
+# Define the chunk size for loading the dataframe
+chunk_size = 100000  # Adjust this value based on your system's memory capacity
+
+# Create a counter variable to keep track of the chunk number
+chunk_counter = 1
+
+# Iterate over the CSV file in chunks and process each chunk
+for chunk in pd.read_csv('large_data.csv', chunksize=chunk_size):
+    # Perform any necessary preprocessing or analysis on the chunk
+    # For demonstration purposes, let's just print the summary statistics of each chunk
+    print(chunk.describe())
+    
+    # Write the chunk to a separate CSV file
+    chunk.to_csv(f'chunk_{chunk_counter}.csv', index=False)
+    chunk_counter += 1
+#-------------------------------
 
 
 
