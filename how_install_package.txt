@@ -16,5 +16,6 @@ conda remove scipy
 !pip install geopandas
 !pip install rasterio
 
+!pip install pyspark py4j
 
 
