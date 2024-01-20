@@ -18,4 +18,8 @@ conda remove scipy
 
 !pip install pyspark py4j
 
+#------------------VS Code
+in VS terminal type: python -m venv C:\code
+Open terminal again install the library using: pip install pandas
+#------------------
 
