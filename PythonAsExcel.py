@@ -4,7 +4,7 @@
 #https://www.ritchieng.com/pandas-multi-criteria-filtering/
 #-------------------------------comment a block
 """
-block
+this is big block of texts
 """
 #-------------------------------make a data frame 
 import pandas as pd
@@ -263,7 +263,7 @@ plt.scatter(R_minus_one, flood_height)
 plt.show()
 
 fit = np.polyfit(np.log(R_minus_one), flood_height, 1)
-print (fit)
+print ("this is the fit", fit)
 #-------------------------------print coefficents separatly
 print (fit[0])
 print (fit[1])
@@ -388,6 +388,7 @@ for chunk in pd.read_csv('large_data.csv', chunksize=chunk_size):
     chunk.to_csv(f'chunk_{chunk_counter}.csv', index=False)
     chunk_counter += 1
 #-------------------------------
+print("this is text for github")
 
 
 
