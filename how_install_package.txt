@@ -12,14 +12,16 @@ conda remove scipy
 
 #------------------How to install packages in Colab
 !pip install PackageName
-
 !pip install geopandas
 !pip install rasterio
-
-!pip install pyspark py4j
-
+!pip install pyspark
 #------------------VS Code
-in VS terminal type: python -m venv C:\code
+in VS terminal type: python -m venv C:\code\venv
 Open terminal again install the library using: pip install pandas
+or
+c:\code> pythom -m venv my_venv
+c:\code> .\my_venv\Scripts\activate
+if restricted in windows powersheel run as admenisterative and type: Set-ExecutionPolicy Unrestricted
+type A
 #------------------
 
