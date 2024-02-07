@@ -388,7 +388,6 @@ for chunk in pd.read_csv('large_data.csv', chunksize=chunk_size):
     chunk.to_csv(f'chunk_{chunk_counter}.csv', index=False)
     chunk_counter += 1
 #-------------------------------
-print("this is text for github")
 
 
 
