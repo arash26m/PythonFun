@@ -387,8 +387,15 @@ for chunk in pd.read_csv('large_data.csv', chunksize=chunk_size):
     # Write the chunk to a separate CSV file
     chunk.to_csv(f'chunk_{chunk_counter}.csv', index=False)
     chunk_counter += 1
-#-------------------------------
+#-------------------------------move the first 100 rows to a new csv file
+import pandas as pd
 
+# Assuming df is your original DataFrame
+# Create a new DataFrame with the first 100 rows
+new_df = df.head(100)
+
+# Save the new DataFrame to a CSV file
+new_df.to_csv('first_100_rows.csv', index=False)
 
 
 
