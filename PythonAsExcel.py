@@ -396,6 +396,15 @@ new_df = df.head(100)
 
 # Save the new DataFrame to a CSV file
 new_df.to_csv('first_100_rows.csv', index=False)
+#-------------------------------groupby
+grouped=df.groupby("recip_gender")
+count_grouped = grouped.count()
+print(count_grouped)
+
+grouped2 = df.groupby(['age', 'Race_CD'])
+result_df = grouped2.agg({'age': 'sum', 'Race_CD': 'count'})
+result_df
+#-------------------------------
 
 
 
