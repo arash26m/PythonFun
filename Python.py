@@ -91,6 +91,32 @@ class MyClass:
     y=10
 
 print(MyClass().y)
+#----
+class person:
+    def __init__(self, name, age):
+        self.name=name
+        self.age=age
 
+print(person("arash", 40).name)
+#----
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
 
+  def __str__(self):
+    return f"{self.name} ({self.age})"
 
+print(Person("John", 36))
+#----
+class Person:
+    def __init__(self,name,age):
+        self.name= name
+        self.age= age
+
+    def myfunc(self):
+        print("hello I am " + self.name)
+
+Person("Arash", 10).myfunc()
+
+#----
