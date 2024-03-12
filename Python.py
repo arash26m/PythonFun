@@ -85,5 +85,12 @@ cv2.imshow("Window",final_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-#-----------------------------------
+#-----------------------------------Class and objects
+class MyClass:
+    x=5
+    y=10
+
+print(MyClass().y)
+
+
 
