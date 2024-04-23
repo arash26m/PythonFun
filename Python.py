@@ -145,4 +145,52 @@ car_1.drive()
 car_2.stop()
 
 print(car_1.year)
-#-----------------------------------
+#---------------------------- Import csv file
+df=pd.read_csv("C:/Users/ataghi2/Desktop/Data.csv")
+#or
+df=pd.read_csv(r"C:\Users\ataghi2\Desktop\Data.csv")
+#---------------------------- Export csv file
+df.to_csv((r"C:\Users\ataghi2\")
+#---------------------------- Tests code up to a certine line
+print (polygon)
+exit()
+#---------------------------- Make a library in Python to add 2 numbers
+
+# simple_addition.py --> save in desk or python path
+def add_numbers(a, b):
+    """
+    Function to add two numbers.
+
+    Parameters:
+    - a: The first number
+    - b: The second number
+
+    Returns:
+    The sum of the two numbers
+    """
+    return a + b
+
+# main_script.py
+import simple_addition
+result = simple_addition.add_numbers(3, 4)
+print("The sum is:", result)
+
+#or
+
+from simple_addition import add_numbers
+result = add_numbers(3, 4)
+print("The sum is:", result)
+
+#---------------------------- variable by f string
+# I have shapefile variable I can change it to f"temperory_{shapefile}"
+#---------------------------- try, except
+try:
+    result = 10 / 0  # This will raise a ZeroDivisionError
+except ZeroDivisionError:
+    print("Error: Division by zero!")
+else:
+    print("Result:", result)  # This will not be executed because of the exception
+finally:
+    print("Cleanup code here")  # This will always be executed
+#---------------------------- 
+
