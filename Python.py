@@ -192,9 +192,4 @@ else:
     print("Result:", result)  # This will not be executed because of the exception
 finally:
     print("Cleanup code here")  # This will always be executed
-#---------------------------- Automated Run Bash *.bat
-"""creat a text file with *.bat name:
-@echo off
-"C:\Users\e689403\AppData\Local\Programs\Python\Python312\python.exe" "H:\read_test\JonCode.py"
-pause"""
 #---------------------------- 
