@@ -168,4 +168,7 @@ else:
     print("Result:", result)  # This will not be executed because of the exception
 finally:
     print("Cleanup code here")  # This will always be executed
+#---------------------------- Dictionary
+thisdict = {"brand": "Ford", "model": "Mustang", "year": 1964}
+print(thisdict["brand"])
 #---------------------------- 
