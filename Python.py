@@ -38,30 +38,6 @@ for i in range (1,11):
     x.append(i)
     
 print(x)
-#-----------------------------------install package in Python
-#in windows search type cmd or press window+R cmd
-#type: pip install numpy
-#pip uninstall numpy
-#pip show numpy
-#pip --version
-
-#-----------------------------------install package in Anaconda
-#search cmd select Anaconda Prompt
-#search package name on internet and copy link into the prompt "conda open cv"
-#conda install -c conda-forge opencv
-#conda install -c anaconda natsort
-#import natsort
-#or in anaconda console type
-#ln[]: !conda install -c conda-forge unicodedata2 --y
-#--To show list of packages
-!conda list
-!conda env list
-!conda update conda
-!activate py35
-!conda update PACKAGENAME
-!conda creat --name ai37 python=3.7
-!conda env list
-!source activate ai37
 
 #-----------------------------------k-means
 #import iris data
