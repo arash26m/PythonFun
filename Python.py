@@ -171,4 +171,13 @@ finally:
 #---------------------------- Dictionary
 thisdict = {"brand": "Ford", "model": "Mustang", "year": 1964}
 print(thisdict["brand"])
+--
+import ETL_Tools.dictionary as dic
+print(dic.all_vax_views["RSV"], dic.all_vax_views["HPV"])
+print(len(dic.all_vax_views))
+print(dic.all_vax_views)
+print(f"I like to see {dic.all_vax_views['most_recent_vax']}")
+#---------------------------- 
+
+
 #---------------------------- 
