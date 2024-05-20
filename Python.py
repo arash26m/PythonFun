@@ -177,7 +177,19 @@ print(dic.all_vax_views["RSV"], dic.all_vax_views["HPV"])
 print(len(dic.all_vax_views))
 print(dic.all_vax_views)
 print(f"I like to see {dic.all_vax_views['most_recent_vax']}")
+#---------------------------- Make dictionary using function 
+def my_function(**kwargs):
+    print(kwargs)
+
+my_function(doghtur=1, son=2, age=3, name="arash")
+
+#---------------------------- Make a  ( , , , ) using function
+def my_function(*args):
+    print(args)
+
+my_function(1, 2, 3)  # Output: (1, 2, 3)
 #---------------------------- 
 
 
-#---------------------------- 
+
+
