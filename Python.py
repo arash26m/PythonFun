@@ -121,6 +121,23 @@ car_1.drive()
 car_2.stop()
 
 print(car_1.year)
+#-----------------------------------Class & Statisticmethod
+#when we want to call a function inside class independently
+class Person:
+    def __init__(self, age):
+        self.age = age
+
+    @staticmethod
+    def is_adult(age):
+        return age >= 21
+
+age = 24
+is_adult = Person.is_adult(age)
+#-----------------------------------Class &
+
+
+
+
 #---------------------------- Import csv file
 df=pd.read_csv("C:/Users/ataghi2/Desktop/Data.csv")
 #or
