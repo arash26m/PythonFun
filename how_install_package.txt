@@ -1,4 +1,4 @@
-#------------------How to install packages in Anaconda
+#------------------Anaconda
 Search on internet: Anaconda package name --> Copy package name
 In Anaconda prompt paste package name
 or
@@ -28,7 +28,7 @@ conda remove scipy
 !conda env list
 !source activate ai37
 
-#------------------How to install packages in Colab
+#------------------Colab
 !pip install PackageName
 !pip install geopandas
 !pip install rasterio
@@ -42,7 +42,7 @@ c:\code> .\my_venv\Scripts\activate
 if restricted in windows powersheel run as admenisterative and type: Set-ExecutionPolicy Unrestricted
 type A
 
-#-----------------------------------install package in Python
+#-----------------------------------Python
 - in windows search type cmd or press window+R cmd
 type: pip install numpy
 pip uninstall numpy
