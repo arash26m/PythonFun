@@ -161,6 +161,20 @@ print(person2.age)
 # print the result
 print(Person.isAdult(22))
 
+#-----------------------------------Class & dataclass
+from dataclasses import dataclass
+from typing import Any #any data type
+
+@dataclass
+class Exercise:
+   name: str
+   reps: int
+   sets: int
+   weight: float  # Weight in lbs
+    note: Any
+
+ex1 = Exercise("Bench press", 10, 3, 52.5, NA)
+ex1.name
 #---------------------------- Import csv file
 df=pd.read_csv("C:/Users/ataghi2/Desktop/Data.csv")
 #or
