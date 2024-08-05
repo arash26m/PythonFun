@@ -42,11 +42,16 @@ c:\code> .\my_venv\Scripts\activate
 if restricted in windows powersheel run as admenisterative and type: Set-ExecutionPolicy Unrestricted
 type A
 
-#-----------------------------------Python
+#------------------Python
 - in windows search type cmd or press window+R cmd
 type: pip install numpy
 pip uninstall numpy
 pip show numpy
 pip --version
 
+#------------------Poetry
+poetry add <package name>
+poetry install
+
+#------------------
 
