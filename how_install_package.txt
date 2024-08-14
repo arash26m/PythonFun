@@ -50,6 +50,7 @@ pip show numpy
 pip --version
 
 #------------------Poetry
+poetry show           #show list of packages
 poetry add <package name>
 poetry install
 
