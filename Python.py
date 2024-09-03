@@ -237,7 +237,9 @@ print(f"I like to see {dic.all_vax_views['most_recent_vax']}")
 def my_function(**kwargs):
     print(kwargs)
 
-my_function(doghtur=1, son=2, age=3, name="arash")
+my_function(doghtur=1, son=2, age=3, name="arash") 
+
+# output {'doghtur': 1, 'son': 2, 'age': 3, 'name': 'arash'}
 
 #---------------------------- Make a  ( , , , ) using function
 def my_function(*args):
