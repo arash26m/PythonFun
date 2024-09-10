@@ -70,6 +70,30 @@ class MyClass:
 
 print(MyClass().y)
 #----
+class Complex:
+    def __init__(self, realpart, imagpart):
+        self.r = realpart
+        self.i = imagpart
+
+x = Complex(3.0, -4.5)
+x.r, x.i # ==> (3.0, -4.5)
+#----
+class MyClass:
+    """A simple example class"""
+    i = 12345
+    j = 567
+
+    def f(self):
+        return 'hello world'
+
+MyClass.j   # ==> 567
+MyClass.__doc__     # ==> 'A simple example class'
+
+x = MyClass()
+x.i = 1234
+x.f() = 'hello world'
+
+#----
 class person:
     def __init__(self, name, age):
         self.name=name
