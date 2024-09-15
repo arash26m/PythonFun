@@ -60,7 +60,10 @@ pip --version
 #------------------Poetry
 poetry show           #show list of packages
 poetry add <package name>
+poetry add <package name>@version number
+poetry remove <package name>
 poetry install
+poetry shell #before running the code
 
 #------------------
 
