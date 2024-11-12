@@ -2,6 +2,9 @@
 pypi.org
 #-----------------------------------Deploy Python Program on Cloud with url
 repl.it
+#to share with others change url
+#replace #main.py with  ?embed=1
+
 #-----------------------------------3D Plot
 import matplotlib.pyplot as plt
 x=[1,2,3]; y=[1,2,3]; z=[1,2,3]
