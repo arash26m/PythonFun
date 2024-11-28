@@ -277,6 +277,22 @@ def my_function(*args):
     print(args)
 
 my_function(1, 2, 3)  # Output: (1, 2, 3)
+#---------------------------- how to use *
+def add (a,b):
+  return a+b
+
+s = [4,5]
+
+add(*s) # --> 9
+------
+def greet(*names):
+    for name in names:
+        print (f"hello {name}")
+
+greet("ali", "hassan", "hossein")
+hello ali
+hello hassan
+hello hossein
 #---------------------------- 
 
 
