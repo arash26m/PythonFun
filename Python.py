@@ -93,20 +93,20 @@ class MyClass:
     def f(self):
         return 'hello world'
 
-MyClass.j   # ==> 567
-MyClass.__doc__     # ==> 'A simple example class'
+MyClass().j   # ==> 567
+MyClass().__doc__     # ==> 'A simple example class'
 
 x = MyClass()
 x.i = 1234
-x.f() = 'hello world'
+x.f()                 # => 'hello world'
 
 #----
-class person:
+class Person:
     def __init__(self, name, age):
         self.name=name
         self.age=age
 
-print(person("arash", 40).name)
+print(Person("arash", 40).name)
 #----
 class Person:
   def __init__(self, name, age):
