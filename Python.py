@@ -293,8 +293,12 @@ greet("ali", "hassan", "hossein")
 hello ali
 hello hassan
 hello hossein
+#---------------------------- namedtuple
+from collections import namedtuple
+HPVCounts = namedtuple("HPVCounts", ["female", "male", "unknown", "nonbinary"])
+example_counts = HPVCounts(female=150, male=100, unknown=20, nonbinary=5)
+print(example_counts.female)      # Outputs: 150
 #---------------------------- 
-
 
 
 
