@@ -7,7 +7,7 @@ repl.it
 #generate url from pdf result
 filestack python pakage and API
 
-#get free API from filestack
+#get free API key from filestack
 #-----------------------------------3D Plot
 import matplotlib.pyplot as plt
 x=[1,2,3]; y=[1,2,3]; z=[1,2,3]
