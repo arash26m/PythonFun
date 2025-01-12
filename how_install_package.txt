@@ -6,6 +6,8 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser    # 2- in 
 .\.venv\Scripts\activate                                                # 3-activate environment in .venv  
 
 pip install pandas
+pip list
+pip --version
 #------------------Anaconda
 Search on internet: Anaconda package name --> Copy package name
 In Anaconda prompt paste package name
