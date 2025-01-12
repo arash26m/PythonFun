@@ -2,11 +2,6 @@
 in VS terminal type: python -m venv C:\code\venv
 Open terminal again install the library using: pip install pandas
 or
-c:\code> python -m venv my_venv
-c:\code> .\my_venv\Scripts\activate
-if restricted in windows powersheel run as admenisterative and type: Set-ExecutionPolicy Unrestricted
-type A
-or
 python -m venv .venv
 change the python verion on bottom of vs code to python venv
 close the terminal and open a new terminal
