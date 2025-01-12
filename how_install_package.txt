@@ -1,13 +1,11 @@
 #------------------VS Code
-python -m venv .venv
+python -m venv .venv                                                     # 1-Create package folder
 change the python verion on bottom of vs code to python venv
 close the terminal and open a new terminal
-in terminal run:
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-and then this
-.\.venv\Scripts\activate
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser    # 2- in terminal run for admin issue
+.\.venv\Scripts\activate                                                # 3-activate environment
 
-Open terminal again install the library using: pip install pandas
+pip install pandas
 #------------------Anaconda
 Search on internet: Anaconda package name --> Copy package name
 In Anaconda prompt paste package name
