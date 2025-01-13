@@ -59,5 +59,11 @@ poetry remove <package name>
 poetry install
 poetry shell #before running the code
 
+#------------------Install Poetry
+#in powershell
+(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
+#to unistall add --uninstall option
+C:\Users\Arash\AppData\Roaming\Python\Scripts
 #------------------
+
 
