@@ -2,6 +2,7 @@ print("Besmellah")
 
 import pyautogui
 import time
+from datetime import datetime
 
 def move_mouse_and_click(duration_hours=2, interval_minutes=2):
     # Calculate total duration in seconds
@@ -20,13 +21,12 @@ def move_mouse_and_click(duration_hours=2, interval_minutes=2):
         
         # Perform a left click
         pyautogui.click()
-        print("Mouse moved and clicked.")
+        print("Mouse moved and clicked.", datetime.now().strftime("%H:%M:%S"))
         
         # Wait for the interval
         time.sleep(interval_seconds)
     
-    print("Finished mouse movement and clicking.")
+    print("Finished mouse movement and clicking.", datetime.now().strftime("%H:%M:%S"))
 
 if __name__ == "__main__":
     move_mouse_and_click()
-
