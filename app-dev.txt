@@ -1,1 +1,4 @@
+#------------------ see storage location in browser
+ctr+shit+I => go application tab => Local storage => app url => see storage file in json format
+
 
