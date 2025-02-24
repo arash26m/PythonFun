@@ -9,6 +9,7 @@ pip install -r requirements.txt    # Install packages from a text file
 pip install pandas
 pip list
 pip --version
+pip freeze > requirements.txt     # Export package names to a text file
 #------------------Anaconda
 Search on internet: Anaconda package name --> Copy package name
 In Anaconda prompt paste package name
