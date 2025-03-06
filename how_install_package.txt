@@ -59,7 +59,8 @@ poetry add <package name>
 poetry add <package name>@version number
 poetry remove <package name>
 poetry install
-poetry shell #before running the code
+poetry env activate
+eval $(poetry env activate)
 
 #------------------Install Poetry
 #in powershell
