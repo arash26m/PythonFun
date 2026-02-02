@@ -54,7 +54,8 @@ pip show numpy
 pip --version
 
 #------------------Poetry
-poetry show           #show list of packages
+poetry init           # first time
+poetry show           # show list of packages
 poetry add <package name>
 poetry add <package name>@version number
 poetry remove <package name>
@@ -68,5 +69,6 @@ eval $(poetry env activate)
 #to unistall add --uninstall option
 C:\Users\Arash\AppData\Roaming\Python\Scripts
 #------------------
+
 
 
