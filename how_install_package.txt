@@ -1,4 +1,4 @@
-#------------------VS Code
+#------------------VS Code Windows
 python -m venv .venv                                                     # 1-Create package folder .venv  
 change the python verion on bottom of vs code to python venv
 close the terminal and open a new terminal
@@ -10,6 +10,9 @@ pip install pandas
 pip list
 pip --version
 pip freeze > requirements.txt     # Export package names to a text file
+#------------------VS Code Mac
+python3 -m venv .venv
+source .venv/bin/activate
 #------------------Anaconda
 Search on internet: Anaconda package name --> Copy package name
 In Anaconda prompt paste package name
@@ -69,6 +72,7 @@ eval $(poetry env activate)
 #to unistall add --uninstall option
 C:\Users\Arash\AppData\Roaming\Python\Scripts
 #------------------
+
 
 
 
